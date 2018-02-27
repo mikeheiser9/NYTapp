@@ -10,9 +10,12 @@ var endYear = "2018";
 $("#searchButton").on("click", function (event) {
      event.preventDefault();
     searchTerm = $("#searchTerm").val().trim();
+    startYear = $("#startYear").val().trim();
+    endYear = $("#endYear").val().trim();
 
-    searchArticle(searchTerm);
-    console.log(searchTerm);
+
+    searchArticle(searchTerm,startYear,endYear);
+    console.log(searchTerm,startYear,endYear);
 });
 
 
