@@ -10,17 +10,19 @@ body {
 
 #header {
     padding: 1px;
-    font-family: 'Plaster', cursive;
+    font-family: 'Audiowide', cursive;
     background-color: #40798C;
     border: 3px solid #70A9A1;
     font-size: 34px;
     text-align: center;
+    color:  #0B2027;
 }
 
 #form {
     background-color: #40798C;
     border: 3px solid #70A9A1;
     margin-top: 15px;
+    font-family: 'Rambla', sans-serif;
 }
 
 #form p {
@@ -29,10 +31,16 @@ body {
     margin-top: 0px;
     padding: 10px;
     font-weight: bold;
+
 }
 
 #searchResults {
     background-color: #40798C;
     border: 3px solid #70A9A1;
     margin-top: 15px;
+}
+.form-control {
+    width: 80%;
+    height: 15px;
+    align-items: center;
 }
