@@ -1,0 +1,32 @@
+/* weird font font-family: 'Plaster', cursive;  */
+/* font-family: 'Audiowide', cursive; */
+/* font-family: 'Rambla', sans-serif; */
+body {
+    background-image: url("../images/01.jpg");
+
+}
+
+
+
+#header {
+    padding: 1px;
+    font-family: 'Plaster', cursive;
+    background-color: #40798C;
+    border: 3px solid #70A9A1;
+    font-size: 34px;
+    text-align: center;
+}
+
+#form {
+    background-color: #40798C;
+    border: 3px solid #70A9A1;
+    margin-top: 15px;
+}
+
+#form p {
+    background-color: #0B2027;
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    font-weight: bold;
+}
