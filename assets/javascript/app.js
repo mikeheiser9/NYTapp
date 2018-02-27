@@ -7,7 +7,7 @@ var endYear = "2018";
 
 
 
-$("#searchButton").on("click", function (event) {
+$("#btn1").on("click", function (event) {
      event.preventDefault();
     searchTerm = $("#searchTerm").val().trim();
     startYear = $("#startYear").val().trim();
