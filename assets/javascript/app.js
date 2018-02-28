@@ -19,7 +19,7 @@ $("#btn1").on("click", function (event) {
 });
 
 //this is the function that does the full search and returns articles
-function searchArticle(searchTerm, startYear,endYear) {
+function searchArticle(searchTerm, startYear, endYear) {
 
 // store the query in a var, for each search search term start year and end year is passed in to the query
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=5fbaeac9151c497d85989bf7b9586bb9&q=" + searchTerm + "&begin_date=" + startYear + "0101" + "&end_date=" + endYear + "1231"
@@ -47,7 +47,8 @@ function searchArticle(searchTerm, startYear,endYear) {
             // create a p tag with publish date
             var publishDate = $("<p>").text("Publish date: " + result[i].pub_date);
             //create a link with the url to article on org site
-            var url = $("<a>").append("href='" + result[i].web_url + "'");
+            var url = $("<a id='link'>").attr("href", result[i].web_url).text(result[i].web_url);
+
             //append the headline, by, section, publishdate and url to the div we created newsDiv
             newsDiv.append(headline, by, section, publishDate, url);
             //append the newsDiv that now contains all the other tags to an exsisting html element 
